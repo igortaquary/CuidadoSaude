@@ -1,14 +1,24 @@
 import { StyleSheet } from "react-native";
 
-export const PRIMARY_COLOR = "#";
+export const PRIMARY_COLOR = "#3A86FF";
 export const SECONDARY_COLOR = "#";
-export const BACKGROUND_COLOR = "#E1E1E1";
+export const BACKGROUND_COLOR = "#EEE";
+export const WHITE = "#FFF";
+export const TEXT_BLACK = "#222"
 
 export const commonStyles = StyleSheet.create({
     container: {
         flex: 1,
-        paddingHorizontal: 10,
+        paddingHorizontal: 15,
         paddingVertical: 20,
         backgroundColor: BACKGROUND_COLOR
+    },
+    flexCenter: {
+        display: "flex",
+        justifyContent: "center",
+    },
+    button: {
+        backgroundColor: PRIMARY_COLOR,
+        tintColor: WHITE
     }
 })
