@@ -19,6 +19,16 @@ export const commonStyles = StyleSheet.create({
     },
     button: {
         backgroundColor: PRIMARY_COLOR,
-        tintColor: WHITE
+        tintColor: WHITE,
+        height: 20
+    },
+    textInput: {
+        backgroundColor: "#FFF",
+        borderColor: "#333",
+        borderRadius: 10,
+        marginVertical: 10,
+        padding: 15,
+        fontSize: 18,
+        tintColor: PRIMARY_COLOR
     }
 })

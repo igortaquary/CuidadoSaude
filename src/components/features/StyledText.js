@@ -3,7 +3,7 @@ import { StyleSheet, Text } from 'react-native';
 import { TEXT_BLACK } from '../../constants/styles';
 import { AuthContext } from '../../contexts/AuthContext';
 
-const StyledText = ({ children, header=false, center=false, mb=0 }) => {
+const StyledText = ({ children, header=false, center=false, mt=0, mb=0, ml=0 }) => {
 
     const { textUppercase } = useContext(AuthContext);
 
@@ -13,8 +13,11 @@ const StyledText = ({ children, header=false, center=false, mb=0 }) => {
                 ...styles.text,
                 textTransform: textUppercase ? 'uppercase' : 'none',
                 fontSize: header ? 24 : 18,
+                fontWeight: header ? "bold" : "normal",
                 textAlign: center ? "center" : "left",
-                marginBottom: mb
+                marginTop: mt,
+                marginBottom: mb,
+                marginLeft: ml,
             }}
         >
             {children}
